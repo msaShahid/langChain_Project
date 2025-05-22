@@ -7,4 +7,4 @@ llm = ChatOpenAI(model='gpt-4o')
 
 result = llm.invoke("What is the square root of 49")
 
-print(result)  
+print(result.content)  
