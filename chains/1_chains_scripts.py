@@ -14,7 +14,7 @@ prompt_template = ChatPromptTemplate.from_messages(
     ]
 )
 
-chain = prompt_template | model
+chain = prompt_template | model | StrOutputParser()
 
 result = chain.invoke({"animal": "cat", "fact_count" : 2})
 
